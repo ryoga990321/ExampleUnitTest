@@ -24,7 +24,7 @@ public class LivingThing {
 
     public void attack(LivingThing opponent) {
         int damage = (int) (Math.random() * attack);
-        if (dead == false) {
+        if (isDead() == false) {
             System.out.printf("%sの攻撃！%sに%dのダメージを与えた！！\n", name, opponent.getName(), damage);
             opponent.wounded(damage);
         }
