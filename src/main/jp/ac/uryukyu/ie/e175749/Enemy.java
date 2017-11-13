@@ -11,7 +11,6 @@ package jp.ac.uryukyu.ie.e175749;
 public class Enemy extends LivingThing{
     public Enemy (String name, int maximumHP, int attack) {
         super(name,maximumHP,attack);
-        System.out.printf("%sのHPは%d。攻撃力は%dです。\n", name, maximumHP, attack);
     }
 
 
